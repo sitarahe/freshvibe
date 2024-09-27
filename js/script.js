@@ -1,15 +1,20 @@
 document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent form submission
 
-    const name = document.getElementById("name").value;
+    // Get form values
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // You could add form validation or form submission logic here.
-    console.log("Form submitted!");
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
+    if (email && message) {
+        // Simulate form submission
+        console.log("Email:", email);
+        console.log("Message:", message);
 
-    alert("Thank you for your message, " + name + "! I'll get back to you soon.");
+        // Show confirmation message
+        alert('Your message has been sent!');
+
+        // Clear form fields
+        document.getElementById("email").value = '';
+        document.getElementById("message").value = '';
+    }
 });

@@ -3,64 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Freshest Vibes in Estonia</title>
+    <title>Perfume Vending Machine</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Welcome to FreshVibe</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About US</a></li>
-                    <li><a href="#projects">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Perfume Vending Machine</h1>
+        <p>Your personalized perfume on the go!</p>
     </header>
 
-    <section id="about" class="container">
+    <section id="about">
         <h2>About Us</h2>
-        <p>Hello! We AJ & Mikk, and we want to make BANK!.</p>
-    </section>
-
-    <section id="projects" class="container">
-        <h2>Services</h2>
-        <div class="project">
+        
             <h3>Service 1: Sales spot - each end-customer pays</h3>
             <p>Perfume Vending Solutions offers quick, convenient access to a variety of high-quality fragrances. Simply pay per spray to try a premium scent on the go, without buying a full bottle. You can find our machines in high-traffic areas like malls and airports for easy, affordable access to your favorite perfumes.</p>
-        </div>
-        <div class="project">
+        
             <h3>Service 2: Service spot - location pays, full service</h3>
             <p>Perfume Vending Solutions provides a full-service fragrance experience for businesses at no upfront cost. We install and maintain perfume vending machines at your location, offering a range of scents for your customers. You simply pay a service fee based on a tiered pricing model (e.g., 50 sprays for X euros), while we handle the rest—ensuring an added value for your customers with minimal effort.</p>
-        </div>
-        <div class="project">
+        
             <h3>Service 3: Service spot - location pays, machine only</h3>
             <p>Perfume Vending Solutions offers a "machine-only" service for businesses that want to manage their own perfume inventory. We provide and maintain the vending machine for a rental fee, and you handle utilities and stocking perfumes. In addition to offering fragrances to your customers, you can also generate extra income by selling ad space on the machine.</p>
-        </div>
+ 
+        <p>We bring you premium perfumes at the touch of a button. Our vending machines are designed to provide a quick, convenient, and luxurious experience.</p>
     </section>
 
-    <section id="contact" class="container">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Got a question or want to learn more? Leave us your details, and we’ll get back to you!</p>
+
+        <form id="contact-form" action="send-email.php" method="POST">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="message">Question or Comment:</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Submit</button>
         </form>
     </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Mikk Kelder. All rights reserved.</p>
-        </div>
-    </footer>
 
     <script src="js/script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+ 
